@@ -1,6 +1,6 @@
 # Flux Function Python
 
 ```
-docker build -t python-server .
-docker run -it --rm python-server
+docker build -t flux-function-python .
+docker run -it --rm flux-function-python
 ```
