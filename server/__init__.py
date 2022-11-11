@@ -7,4 +7,8 @@ def create_app():
     def main():
         return "Hello World"
 
+    @app.route("/version")
+    def version():
+        return "1.0"
+
     return app
