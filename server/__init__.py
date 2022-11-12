@@ -1,4 +1,5 @@
 from flask import Flask
+from flask_cors import CORS
 
 
 def create_app():
@@ -11,5 +12,8 @@ def create_app():
     @app.route("/version")
     def version():
         return "1.0"
+
+    with app.app_context():
+        CORS(app)
 
     return app
