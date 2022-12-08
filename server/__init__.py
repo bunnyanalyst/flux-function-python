@@ -7,7 +7,7 @@ def create_app():
 
     @app.route("/")
     def main():
-        return "Hello World"
+        return "Hello World Testing Branch"
 
     @app.route("/version")
     def version():
